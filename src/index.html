@@ -1,20 +1,111 @@
 <!DOCTYPE html>
-
 <html lang="pt-BR">
-
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Site Azure</title>
-  <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aplicação Moderna</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
-
 <body>
-  <h1>Olá, Azure Static Web Apps!</h1>
-  <button onclick="mostrarMensagem()">Clique aqui</button>
-  <p id="mensagem"></p>
+    <div class="container">
+        <header class="header">
+            <div class="header-content">
+                <h1 class="logo">
+                    <i class="fas fa-cloud"></i>
+                    CloudApp
+                </h1>
+                <nav class="nav">
+                    <a href="#" class="nav-link active">Home</a>
+                    <a href="#" class="nav-link">Sobre</a>
+                    <a href="#" class="nav-link">Contato</a>
+                </nav>
+            </div>
+        </header>
 
-  <script src="script.js"></script>
+        <main class="main">
+            <section class="hero">
+                <div class="hero-content">
+                    <h2 class="hero-title">Bem-vindo à nossa aplicação</h2>
+                    <p class="hero-subtitle">Uma experiência moderna e intuitiva na nuvem</p>
+                    <div class="hero-buttons">
+                        <button class="btn btn-primary" id="primaryBtn">
+                            <i class="fas fa-rocket"></i>
+                            Começar
+                        </button>
+                        <button class="btn btn-secondary" id="secondaryBtn">
+                            <i class="fas fa-info-circle"></i>
+                            Saiba mais
+                        </button>
+                    </div>
+                </div>
+            </section>
+
+            <section class="features">
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <h3>Segurança</h3>
+                        <p>Proteção avançada para seus dados</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-bolt"></i>
+                        </div>
+                        <h3>Performance</h3>
+                        <p>Velocidade e eficiência garantidas</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <h3>Colaboração</h3>
+                        <p>Trabalhe em equipe de forma eficiente</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="dashboard">
+                <div class="dashboard-header">
+                    <h3>Dashboard</h3>
+                    <button class="btn btn-outline" id="refreshBtn">
+                        <i class="fas fa-sync-alt"></i>
+                        Atualizar
+                    </button>
+                </div>
+                <div class="dashboard-content">
+                    <div class="stats-grid">
+                        <div class="stat-card">
+                            <div class="stat-value">1,234</div>
+                            <div class="stat-label">Usuários Ativos</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-value">98.5%</div>
+                            <div class="stat-label">Uptime</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-value">2.4GB</div>
+                            <div class="stat-label">Dados Processados</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <p>&copy; 2024 CloudApp. Todos os direitos reservados.</p>
+        </footer>
+    </div>
+
+    <div class="loading-overlay" id="loadingOverlay">
+        <div class="loading-spinner">
+            <i class="fas fa-spinner fa-spin"></i>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
 </body>
-
 </html>
